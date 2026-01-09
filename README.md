@@ -1,15 +1,21 @@
-## springboot-multi-module
+# springboot-multi-module
 
-springboot-multi-module
-│
-├── build.gradle          (parent)
-├── settings.gradle
-│
-├── user-http             (REST / main app)
-│   └── build.gradle
-│
-├── user-kafka            (Kafka consumer/producer)
-│   └── build.gradle
-│
-└── user-shared           (DTO, entity, mapper, utils)
-└── build.gradle
+This is a Spring Boot multi-module project with a shared module, a REST application, and a Kafka module.
+
+## Project Structure
+
+
+## Modules
+
+- **user-shared**: Contains DTOs, entities, mappers, utilities, and shared logic.
+- **user-http**: REST application module.
+- **user-kafka**: Kafka producer/consumer module.
+
+## Build & Run
+
+Build all modules using Gradle from the root directory:
+
+```bash
+./gradlew clean build
+
+./gradlew :user-http:bootRun
