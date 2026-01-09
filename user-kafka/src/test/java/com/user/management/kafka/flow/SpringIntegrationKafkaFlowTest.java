@@ -48,7 +48,7 @@ class SpringIntegrationKafkaFlowTest {
 
     @Test
     void shouldMoveDataToAckTopic() {
-        String payload = "Integration Test Data";
+        String payload = "User data";
         String targetTopic = kafkaServiceProperties.getAckTopicName();
 
         Consumer<String, String> testConsumer = consumerFactory.createConsumer(kafkaServiceProperties.getGroupId(), "test-client");
