@@ -1,10 +1,13 @@
+# Ignore Gradle wrapper files completely
+gradle/wrapper/gradle-wrapper.jar
+gradlew
+gradlew.bat
+gradle/wrapper/gradle-wrapper.properties
+
 # Ignore Gradle build directories
-.gradle
+.gradle/
 build/
-!gradle/wrapper/gradle-wrapper.jar       # keep Gradle wrapper JAR
-!gradle/wrapper/gradle-wrapper.properties  # keep wrapper properties
-!**/src/main/**/build/
-!**/src/test/**/build/
+**/build/
 
 # Ignore STS files
 .apt_generated
@@ -15,8 +18,7 @@ build/
 .springBeans
 .sts4-cache
 bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+**/bin/
 
 # Ignore IntelliJ IDEA files
 .idea/
@@ -24,8 +26,7 @@ bin/
 *.iml
 *.ipr
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+**/out/
 
 # Ignore NetBeans files
 /nbproject/private/
