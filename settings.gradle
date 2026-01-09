@@ -1,0 +1,5 @@
+rootProject.name = 'springboot-multi-module'
+
+include 'user-http'
+include 'user-kafka'
+include 'user-shared'
