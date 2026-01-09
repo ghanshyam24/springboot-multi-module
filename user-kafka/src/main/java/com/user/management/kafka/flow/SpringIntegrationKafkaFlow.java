@@ -20,6 +20,7 @@ public class SpringIntegrationKafkaFlow {
 
     KafkaServiceProperties kafkaProperties;
 
+    //todo save kafka consumed data to the db
     @Bean
     public IntegrationFlow kafkaInboundFlow(ConsumerFactory<String, String> consumerFactory) {
         return IntegrationFlow
